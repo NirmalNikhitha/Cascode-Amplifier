@@ -1,34 +1,89 @@
-# Cascode-Amplifier
-This project focuses on the design and analysis of a Cascode Amplifier, a two-stage amplifier that combines a Common Source (CS) stage with a Common Gate (CG) stage. The cascode configuration improves gain, bandwidth, and output resistance while reducing the Miller effect, making it highly suitable for high-frequency applications.
+# CMOS Cascode Amplifier Design using Cadence Virtuoso
 
-🎯 Objectives
-Design a MOSFET-based cascode amplifier,
-Improve gain and output resistance,
-Reduce Miller capacitance effect,
-Analyze frequency response and bandwidth.
+## Overview
 
-⚙️ Circuit Overview
+This repository contains the transistor-level implementation of a CMOS Cascode Amplifier designed and simulated using **Cadence Virtuoso**. The project demonstrates custom analog IC design by developing the amplifier schematic and evaluating its performance through DC, AC, and transient analyses using the Spectre simulator.
 
-The cascode amplifier consists of:
 
-M1 (Common Source stage) → Input stage
-M2 (Common Gate stage) → Output stage
+## Features
 
-The output is taken from the drain of M2, providing high gain and better frequency performance compared to a simple common source amplifier.
+- CMOS transistor-level cascode amplifier design
+- Schematic implementation in Cadence Virtuoso
+- DC operating point analysis
+- AC frequency response analysis
+- Transient response verification
+- Gain characterization
 
-Key Advantages:
 
-High voltage gain,
-High output resistance,
-Reduced Miller effect,
-Improved bandwidth.
+## Tools Used
 
-📊 Results
-Achieved significantly higher gain compared to CS amplifier,
-Reduced parasitic capacitance effects,
-Improved high-frequency performance,
-Stable biasing and operation.
+- Cadence Virtuoso
+- Analog Design Environment (ADE)
+- Spectre Simulator
 
-🛠️ Tools Used
-Cadence Virtuoso
-CMOS / NMOS technology
+
+## Repository Contents
+
+```
+├── Schematic/
+│   └── Cascode Amplifier Schematic
+├── DC_Response/
+│   └── DC Operating Point
+├── AC_Response/
+│   └── Frequency Response
+├── Transient_Response/
+│   └── Transient Simulation
+├── Gain_Plot/
+│   └── Gain Analysis
+└── README.md
+```
+
+
+## Simulation Results
+
+### Schematic
+
+The cascode amplifier is implemented using CMOS transistors in Cadence Virtuoso.
+
+### DC Response
+
+DC analysis verifies the biasing conditions and ensures that the transistors operate in the desired region.
+
+### AC Response
+
+AC analysis evaluates the frequency response, voltage gain, bandwidth, and overall small-signal performance of the amplifier.
+
+### Transient Response
+
+Transient analysis confirms the amplifier's time-domain response to the applied input signal.
+
+### Gain Plot
+
+The gain plot illustrates the amplifier's voltage gain across the operating frequency range.
+
+
+## Applications
+
+- RF Front-End Circuits
+- Low-Noise Amplifiers (LNAs)
+- Analog Signal Processing
+- High-Speed Communication Systems
+- Sensor Interface Circuits
+- Data Acquisition Systems
+- Mixed-Signal IC Design
+- VLSI Analog Circuit Design
+
+
+## Learning Outcomes
+
+- CMOS analog circuit design
+- Cascode amplifier architecture
+- Schematic creation in Cadence Virtuoso
+- DC, AC, and transient analysis
+- Gain and frequency response evaluation
+- Analog circuit performance verification
+
+
+## License
+
+This project is shared for educational and learning purposes.
